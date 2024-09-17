@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --background-color: rgb(243, 243, 243);
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --selected-item: rgb(33, 150, 243);
+  --item-color: rgb(43, 47, 53);
+  --primary-bg-color: #2361ae;
+  --hover-bg-color: rgba(33, 43, 54, 0.08);
+  --input-placeholder-color: rgb(168, 166, 166);
+  --input-border-color: rgba(145, 158, 171, 0.16);
+  --hover-input-border-color: rgb(0, 0, 0);
+  --shadow-light: rgba(145, 158, 171, 0.08);
+  --shadow-dark: rgba(145, 158, 171, 0.08);
+  --sider-bg-color: #578bcc;
+  --logo-color: #c91b78;
+  --transparent-color: transparent;
+
+
+
+  --main-bg-color: rgb(243, 243, 243);
+  /* Main background color */
+  --input-placeholder-color: rgb(168, 166, 166);
+  /* Input placeholder color */
+  --border-color: rgba(145, 158, 171, 0.16);
+  /* Default border color */
+  --primary-color: #2361ae;
+  /* Primary button and hover color */
+  --text-color: rgb(255, 255, 255);
+  /* Text color for buttons */
+}

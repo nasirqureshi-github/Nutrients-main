@@ -1,0 +1,72 @@
+.signup,
+.login {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container,
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    background-color: var(--white-color);
+    padding:  40px 40px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-dark) 0px 0px 2px 0px, var(--shadow-dark) 0px 12px 24px -4px;
+}
+
+.login .ant-col {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.login .ant-col:hover {
+    background-color: var(--hover-bg-color);
+}
+
+/* .ant-input-outlined::placeholder {
+    color: var(--input-placeholder-color);
+}
+
+.ant-input-outlined {
+    border: 1px solid var(--border-color);
+}
+
+.ant-input-outlined:hover {
+    border: 1px solid var(--black-color);
+} 
+
+.ant-input-password .ant-input::placeholder {
+    color: var(--input-placeholder-color);
+} */
+
+.login .ant-btn-primary {
+    color: var(--text-color);
+    width: 100%;
+    margin-top: 20px;
+    padding: 18px 22px;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    border-color: transparent;
+}
+
+.login .ant-btn-primary:hover,
+.login .ant-btn-primary:focus {
+    background-color: var(--primary-color);
+}
+
+.login .ant-btn-primary:active {
+    background-color: var(--primary-color);
+}

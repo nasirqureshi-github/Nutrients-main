@@ -1,0 +1,58 @@
+.nutrients-heading {
+    font-size: 24px;
+    /* Adjust font size for the heading */
+    font-weight: bold;
+    /* Make the heading bold */
+    color: #333;
+    /* Dark text color for better readability */
+    margin-bottom: 20px;
+    /* Space below the heading */
+    text-align: center;
+    /* Center align the heading */
+}
+
+.nutrient-col {
+    /* margin: 2px; */
+    background-color: #fff;
+    /* White background */
+    border-radius: 8px;
+    /* Rounded corners */
+    border: 1px solid #ddd;
+    /* Light border for subtle separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Reduced shadow */
+    /* Padding inside the column */
+    padding: 20px;
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+    text-align: center;
+    cursor: pointer;
+    /* Center text */
+}
+
+.nutrient-col:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Slightly increased shadow on hover */
+    transform: translateY(-2px);
+    /* Subtle lift effect on hover */
+}
+
+.nutrient-text {
+    font-size: 18px;
+    /* Adjust font size */
+    font-weight: bold;
+    /* Make the text bold */
+    color: #333;
+    /* Dark text color */
+}
+
+.select-container {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.ant-select {
+    width: 30%;
+    height: 45px;
+    /* Full width for the select component */
+}
