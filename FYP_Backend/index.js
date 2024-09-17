@@ -38,7 +38,9 @@ app.use('/api/', nutrientRoutes)
 app.use('/api/', FamilyProfileRoutes)
 
 
-
+app.get('/', (req, res) => {
+  res.send('Backend is running!');
+});
 
 
 
