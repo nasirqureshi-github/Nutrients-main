@@ -31,7 +31,9 @@ app.use('/api/uploads', uploadRoutes)
 app.use('/api/', nutrientRoutes)
 app.use('/api/', FamilyProfileRoutes)
 
-
+pp.get('/', (req, res) => {
+    res.send('api working');
+  });
 
 
 
