@@ -19,7 +19,7 @@ function ProvinceNutrients() {
         formData.append('image', file);
 
         try {
-            const response = await fetch('https://neovatus.onrender.com/api/uploads', {
+            const response = await fetch('https://nutrients-main-backend.vercel.app/api/uploads', {
                 method: 'POST',
                 body: formData,
             });
@@ -54,7 +54,7 @@ function ProvinceNutrients() {
         }
 
         try {
-            const response = await fetch('https://neovatus.onrender.com/api/source', {
+            const response = await fetch('https://nutrients-main-backend.vercel.app/api/source', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -93,7 +93,7 @@ function ProvinceNutrients() {
         }
 
         try {
-            const response = await fetch(`https://neovatus.onrender.com/api/updatesource/${currentRecord._id}`, {
+            const response = await fetch(`https://nutrients-main-backend.vercel.app/api/updatesource/${currentRecord._id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -129,7 +129,7 @@ function ProvinceNutrients() {
 
     const fetchSources = async () => {
         try {
-            const response = await fetch('https://neovatus.onrender.com/api/getsource', {
+            const response = await fetch('https://nutrients-main-backend.vercel.app/api/getsource', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -195,7 +195,7 @@ function ProvinceNutrients() {
             title: 'Image',
             dataIndex: 'image',
             key: 'image',
-            render: (text) => text ? <img src={`https://neovatus.onrender.com/api/images/${text}`} alt="source" style={{ width: 50, height: 50 }} /> : null,
+            render: (text) => text ? <img src={`https://nutrients-main-backend.vercel.app/api/images/${text}`} alt="source" style={{ width: 50, height: 50 }} /> : null,
         },
         {
             title: 'Actions',
@@ -221,7 +221,7 @@ function ProvinceNutrients() {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`https://neovatus.onrender.com/api/source/${id}`, {
+            const response = await fetch(`https://nutrients-main-backend.vercel.app/api/source/${id}`, {
                 method: 'DELETE',
             });
 
@@ -373,7 +373,7 @@ function ProvinceNutrients() {
                         />
                         {currentRecord?.image && (
                             <img
-                                src={`https://neovatus.onrender.com/api/images/${currentRecord.image}`}
+                                src={`https://nutrients-main-backend.vercel.app/images/${currentRecord.image}`}
                                 alt="current"
                                 style={{ width: 100, marginTop: 10 }}
                             />

@@ -23,7 +23,7 @@ function Nutrients() {
 
             try {
                 // Fetch nutrients
-                const nutrientsResponse = await fetch('https://neovatus.onrender.com/api/nutrient', {
+                const nutrientsResponse = await fetch('https://nutrients-main-backend.vercel.app/api/nutrient', {
                     method: "GET"
                 });
                 
@@ -66,7 +66,7 @@ function Nutrients() {
         try {
             const values = await form.validateFields();
             values.likelyToEatIn = values.likelyToEatIn.join('/'); // Convert array to string
-            const response = await fetch('https://neovatus.onrender.com/api/add-source', {
+            const response = await fetch('https://nutrients-main-backend.vercel.app/api/add-source', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -51,7 +51,7 @@ function SourceTable() {
 
         const fetchData = async () => {
             try {
-                const response = await fetch(`https://neovatus.onrender.com/api/get-source/${check_name}`);
+                const response = await fetch(`https://nutrients-main-backend.vercel.app/api/get-source/${check_name}`);
                 const result = await response.json();
 
                 if (result.success) {
@@ -81,7 +81,7 @@ function SourceTable() {
             const updatedRecord = { ...editingRecord, [check_name]: values[check_name] };
 
             // Call the API to update the record on the server
-            const response = await fetch(`https://neovatus.onrender.com/api/update-source/${updatedRecord._id}`, {
+            const response = await fetch(`https://nutrients-main-backend.vercel.app/api/update-source/${updatedRecord._id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ [check_name]: updatedRecord[check_name] }),
@@ -118,7 +118,7 @@ function SourceTable() {
             onOk: async () => {
                 try {
                     // Call the API to delete the record
-                    const response = await fetch(`https://neovatus.onrender.com/api/delete-source/${record._id}`, {
+                    const response = await fetch(`https://nutrients-main-backend.vercel.app/api/delete-source/${record._id}`, {
                         method: 'DELETE',
                     });
 

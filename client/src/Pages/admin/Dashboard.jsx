@@ -12,7 +12,7 @@ const Dashboard = () => {
             const user_ = JSON.parse(localStorage.getItem('currentUser'));
 
             try {
-                const response = await fetch(`https://neovatus.onrender.com/api/user/all-user`, {
+                const response = await fetch(`https://nutrients-main-backend.vercel.app/api/user/all-user`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

@@ -42,7 +42,7 @@ const PriceManagement = () => {
   const fetchSources = async () => {
     try {
       const response = await fetch(
-        "https://neovatus.onrender.com/api/get-allsource"
+        "https://nutrients-main-backend.vercel.app/api/get-allsource"
       );
       const result = await response.json();
       if (response.ok) {
@@ -57,7 +57,7 @@ const PriceManagement = () => {
 
   const fetchCities = async () => {
     try {
-      const response = await fetch("https://neovatus.onrender.com/api/cities");
+      const response = await fetch("https://nutrients-main-backend.vercel.app/api/cities");
       const result = await response.json();
       if (response.ok) {
         setCities(result.data);
@@ -72,7 +72,7 @@ const PriceManagement = () => {
   const fetchPrices = async (cityId) => {
     try {
       const response = await fetch(
-        `https://neovatus.onrender.com/api/prices?city=${cityId}`
+        `https://nutrients-main-backend.vercel.app/api/prices?city=${cityId}`
       );
       const result = await response.json();
       if (response.ok) {
@@ -104,8 +104,8 @@ const PriceManagement = () => {
       };
 
       const url = isEditing
-        ? ` https://neovatus.onrender.com/api/prices/${currentPriceId}`
-        : " https://neovatus.onrender.com/api/prices";
+        ? ` https://nutrients-main-backend.vercel.app/api/prices/${currentPriceId}`
+        : " https://nutrients-main-backend.vercel.app/api/prices";
 
       const method = isEditing ? "PUT" : "POST";
 
@@ -143,7 +143,7 @@ const PriceManagement = () => {
 
     try {
       const response = await fetch(
-        "https://neovatus.onrender.com/api/uploads",
+        "https://nutrients-main-backend.vercel.app/api/uploads",
         {
           method: "POST",
           body: formData,
@@ -208,7 +208,7 @@ const PriceManagement = () => {
       render: (text) =>
         text ? (
           <img
-            src={`https://neovatus.onrender.com/api/images/${text}`}
+            src={`https://nutrients-main-backend.vercel.app/api/images/${text}`}
             alt="Price Image"
             style={{ width: 100, height: 100, objectFit: "cover" }}
           />

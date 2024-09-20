@@ -14,7 +14,7 @@ const City = () => {
 
     const fetchCities = async () => {
         try {
-            const response = await fetch('https://neovatus.onrender.com/api/cities');
+            const response = await fetch('https://nutrients-main-backend.vercel.app/api/cities');
             const result = await response.json();
             if (result.success) {
                 setCities(result.data);
@@ -30,7 +30,7 @@ const City = () => {
     const handleAddCity = async () => {
         try {
             const values = await form.validateFields();
-            const response = await fetch('https://neovatus.onrender.com/api/cities', {
+            const response = await fetch('https://nutrients-main-backend.vercel.app/api/cities', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name: values.name }),
@@ -59,7 +59,7 @@ const City = () => {
     const handleUpdateCity = async () => {
         try {
             const values = await form.validateFields();
-            const response = await fetch(`https://neovatus.onrender.com/api/cities/${currentCity._id}`, {
+            const response = await fetch(`https://nutrients-main-backend.vercel.app/api/cities/${currentCity._id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name: values.name }),
@@ -83,7 +83,7 @@ const City = () => {
     // Function to handle deleting a city
     const handleDeleteCity = async (cityId) => {
         try {
-            const response = await fetch(`https://neovatus.onrender.com/api/cities/${cityId}`, {
+            const response = await fetch(`https://nutrients-main-backend.vercel.app/api/cities/${cityId}`, {
                 method: 'DELETE',
             });
             const result = await response.json();
