@@ -14,7 +14,7 @@ const City = () => {
 
     const fetchCities = async () => {
         try {
-            const response = await fetch('https://nutrients-main-backend.vercel.app/api/cities');
+            const response = await fetch('https://nutrients-main-backend.vercel.app//api/cities');
             const result = await response.json();
             if (result.success) {
                 setCities(result.data);
