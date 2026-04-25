@@ -280,7 +280,8 @@ exports.login = async (req, res) => {
     console.log("body", req.body)
     try {
         // Find user by email
-        let findUser = await User.findOne({ email, verify: true, role: "Admin" });
+        // let findUser = await User.findOne({ email, verify: true, role: "Admin" });
+                let findUser = await User.findOne({ email});
         console.log({ users: findUser })
         // If user not found, respond with error
         if (!findUser) {
