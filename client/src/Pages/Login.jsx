@@ -11,8 +11,8 @@ const { Title, Text, Link } = Typography;
 const Login = () => {
     // const [username, setUsername] = useState('aasad.saddiqui4455@gmail.com');
     // const [password, setPassword] = useState('Asad1234!');
-    const [username, setUsername] = useState('qureshiatif812@gmail.com');
-    const [password, setPassword] = useState('CgGgVg');
+    const [username, setUsername] = useState('nasirq206@gmail.com');
+    const [password, setPassword] = useState('Abcd1234*');
     const navigate = useNavigate();
     const baseURL = process.env.REACT_APP_API_BASE_URL;
 
