@@ -15,7 +15,16 @@ const path = require('path');
 const app = express();
 dotenv.config();
 
-app.use(cors());
+app.use(cors(
+ {
+  origin: [
+       "http://localhost:3000",
+    "https://nutrients-main-client.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}
+));
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(cookieParser());
