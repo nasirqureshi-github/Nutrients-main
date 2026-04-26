@@ -69,7 +69,7 @@ const Login = () => {
                     <Button type="primary" onClick={handleLogin} style={{ width: '100%', marginTop: '10px' }}>
                         Login
                     </Button>
-                    <P>Request Admin to register you.</P>
+                    <p>Request Admin to register you.</p>
                 </Row>
             </div>
         </div>
