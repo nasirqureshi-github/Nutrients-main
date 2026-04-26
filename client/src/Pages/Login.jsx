@@ -69,7 +69,7 @@ const Login = () => {
                     <Button type="primary" onClick={handleLogin} style={{ width: '100%', marginTop: '10px' }}>
                         Login
                     </Button>
-                   <p style={{ fontSize: "18px", fontWeight: "bold", textAlign: "center", marginTop: "10px" }}>
+                   <p style={{ fontSize: "18px", textAlign: "center", marginTop: "10px" }}>
                    Request <span style={{ fontWeight: "bold" }}>Admin</span> to register you.
                   </p>
                 </Row>
