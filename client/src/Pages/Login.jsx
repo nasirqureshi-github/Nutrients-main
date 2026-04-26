@@ -9,10 +9,10 @@ import CustomPasswordInput from '../Components/Forms/CustomPasswordInput';
 const { Title, Text, Link } = Typography;
 
 const Login = () => {
-    // const [username, setUsername] = useState('aasad.saddiqui4455@gmail.com');
-    // const [password, setPassword] = useState('Asad1234!');
-    const [username, setUsername] = useState('nasirq206@gmail.com');
-    const [password, setPassword] = useState('Abcd1234*');
+    //  const [username, setUsername] = useState('nasirq206@gmail.com');
+    // const [password, setPassword] = useState('Abcd1234*');
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
     const navigate = useNavigate();
     const baseURL = process.env.REACT_APP_API_BASE_URL;
 
@@ -69,7 +69,9 @@ const Login = () => {
                     <Button type="primary" onClick={handleLogin} style={{ width: '100%', marginTop: '10px' }}>
                         Login
                     </Button>
-                    <p>Request Admin to register you.</p>
+                   <p style={{ fontSize: "18px", fontWeight: "bold", textAlign: "center", marginTop: "10px" }}>
+                   Request <span style={{ fontWeight: "bold" }}>Admin</span> to register you.
+                  </p>
                 </Row>
             </div>
         </div>
